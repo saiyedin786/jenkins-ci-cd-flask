@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         VENV = "venv"
+         MONGO_URI = "mongodb+srv://admin:admin@cluster0.stznivp.mongodb.net/sms"
     }
 
     stages {
