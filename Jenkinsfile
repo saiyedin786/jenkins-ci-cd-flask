@@ -38,16 +38,16 @@ pipeline {
         }
     }
 
-    post {
-        success {
-            mail to: 'admin@example.com',
-                 subject: 'Jenkins Build SUCCESS',
-                 body: 'The Flask pipeline completed successfully.'
-        }
-        failure {
-            mail to: 'admin@example.com',
-                 subject: 'Jenkins Build FAILED',
-                 body: 'The Flask pipeline failed. Please check Jenkins.'
-        }
+    // post {
+    //     success {
+    //         mail to: 'admin@example.com',
+    //              subject: 'Jenkins Build SUCCESS',
+    //              body: 'The Flask pipeline completed successfully.'
+    //     }
+    //     failure {
+    //         mail to: 'admin@example.com',
+    //              subject: 'Jenkins Build FAILED',
+    //              body: 'The Flask pipeline failed. Please check Jenkins.'
+    //     }
     }
 }
