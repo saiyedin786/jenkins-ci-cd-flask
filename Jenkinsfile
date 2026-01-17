@@ -32,7 +32,7 @@ pipeline {
                 sh '''
                 echo "Deploying Flask app to staging..."
                 pkill -f app.py || true
-                nohup python app.py &
+                nohup venv/bin/python app.py > app.log 2>&1 &
                 '''
             }
         }
